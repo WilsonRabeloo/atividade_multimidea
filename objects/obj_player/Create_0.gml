@@ -65,7 +65,7 @@ mover = function(){
 
 estado_parado = function()
 {
-    
+    troca_sprite(spr_player_parada)
     velv = 0;
     velh = 0;
     aplica_vel();
@@ -87,7 +87,7 @@ estado_parado = function()
 
 estado_movendo = function()
 {
-    
+    troca_sprite(spr_player_andar_orig)
     aplica_vel();
     
     if velh == 0 {
