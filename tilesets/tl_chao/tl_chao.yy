@@ -1,0 +1,42 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_chao",
+  "autoTileSets":[
+    {"$GMAutoTileSet":"","%Name":"autotile_1","closed_edge":false,"name":"autotile_1","resourceType":"GMAutoTileSet","resourceVersion":"2.0","tiles":[
+        13,4,2,21,26,35,0,0,0,0,0,0,0,0,0,0,12,40,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,39,
+      ],},
+  ],
+  "macroPageTiles":{
+    "SerialiseHeight":0,
+    "SerialiseWidth":0,
+    "TileSerialiseData":[],
+  },
+  "name":"tl_chao",
+  "out_columns":7,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Tile Sets",
+    "path":"folders/Tile Sets.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"Grassland_Terrain_47Tiles",
+    "path":"sprites/Grassland_Terrain_47Tiles/Grassland_Terrain_47Tiles.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":48,
+}
