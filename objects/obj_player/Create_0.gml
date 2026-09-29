@@ -4,7 +4,7 @@ velh = 0;
 max_velh = 2;
 
 velv = 0;
-max_velv = 3.8;
+max_velv = 4;
 
 grav = 0.250;
 
@@ -19,6 +19,8 @@ olha = 1;
 xscale = 1//0.72
 yscale = 1//0.72
 
+cntrl_vel = 0
+
 var _layer = layer_tilemap_get_id("tl_chao");
 colisoes = [obj_parede, _layer];
 
@@ -27,12 +29,18 @@ pega_input = function(){
     dir = keyboard_check(ord("D"));
     esq = keyboard_check(ord("A"));
     jump = keyboard_check_pressed(vk_space);
+    mira = mouse_check_button(mb_right)
     
 }
 
 checa_chao = function()
 {
     chao = place_meeting(x, y + 1, colisoes);
+}
+
+checa_teto = function()
+{
+    teto = place_meeting(x, y - 1, colisoes);
 }
 
 aplica_vel = function(){
@@ -43,6 +51,7 @@ aplica_vel = function(){
     if !chao
     {
         velv += grav;
+        if teto velv = grav;
     }
     else
     {
@@ -65,6 +74,8 @@ mover = function(){
 
 estado_parado = function()
 {
+    image_blend = c_white
+    
     troca_sprite(spr_player_parada)
     velv = 0;
     velh = 0;
@@ -76,11 +87,18 @@ estado_parado = function()
     }
     
     if jump{
+        efeito_mola(0.8,1.5);
         estado = estado_pulo;
     }
     
     if !chao{
+        efeito_mola(0.8, 1.5);
         estado = estado_pulo;
+    }
+    
+    if mira{
+        estado = estado_atirar;
+        
     }
     
 }
@@ -95,10 +113,12 @@ estado_movendo = function()
     }
     
     if jump{
+        efeito_mola(0.8,1.2);
         estado = estado_pulo;
     }
     
     if !chao{
+        //efeito_mola(0.8, 1.2);
         estado = estado_pulo;
     }
     
@@ -110,10 +130,90 @@ estado_pulo = function()
     aplica_vel();
     
     if chao{
+        efeito_mola(1.2, 0.5);
         estado = estado_parado;
     }
     
+      if mira{
+        
+        estado = estado_atirar;
+        
+    }
+    
 }
+
+estado_atirar = function()
+{
+    aplica_vel()
+    velh = 0
+    
+    olha = sign(mouse_x-x)
+    
+    image_blend = c_blue
+    troca_sprite(spr_player_tiro)
+    
+    if !cntrl_vel{
+        image_speed = 0}
+    
+    if !mira{
+        estado = estado_parado
+        image_speed=1}
+    
+    if mouse_check_button_pressed(mb_left)
+    {
+        cntrl_vel = 1
+        image_index = 1
+        image_speed = 1
+        
+        show_debug_message("ababa")
+    }
+    
+    if image_index >= image_number - 1{
+        cntrl_vel = 0}
+}
+
+//estado_atirar = function()
+//{
+    //aplica_vel()
+    //velh = 0
+    //
+    //olha = sign(mouse_x-x)
+    //
+    //image_blend = c_blue
+    //sprite_index = spr_player_tiro
+    ////image_index = 0
+    //
+    ////if image_index = 0{
+        ////
+        ////image_speed = 0
+        ////
+    ////}else{
+        ////
+        ////image_speed = 0
+    ////}
+    ////
+    //
+    //
+    //if !cntrl_vel image_speed = 0
+    //
+    //
+    //if !mira{
+        //
+        //estado = estado_parado;
+        //
+    //}
+    //if mouse_check_button_pressed(mb_left){
+        //
+        //cntrl_vel = 1
+        //image_index=1
+        //show_debug_message("ababa")
+        //
+        //
+        //
+    //}
+    //
+    //if image_index=0 cntrl_vel = 0
+//}
 
 estado = estado_parado;
 

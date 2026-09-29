@@ -33,6 +33,10 @@
   ],
   "ForcedPrefabProjectReferences":[
     {"link":"io.gamemaker.gm_filter_vignette-1.0.0","name":"io.gamemaker.gm_filter_vignette-1.0.0","path":"io.gamemaker.gm_filter_vignette-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_filter_boxes-1.0.0","name":"io.gamemaker.gm_filter_boxes-1.0.0","path":"io.gamemaker.gm_filter_boxes-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_effect_gaussian_blur-1.0.0","name":"io.gamemaker.gm_effect_gaussian_blur-1.0.0","path":"io.gamemaker.gm_effect_gaussian_blur-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_effect_glow-1.0.0","name":"io.gamemaker.gm_effect_glow-1.0.0","path":"io.gamemaker.gm_effect_glow-1.0.0.yyp",},
+    {"link":"io.gamemaker.gm_effect_windblown_particles-1.0.0","name":"io.gamemaker.gm_effect_windblown_particles-1.0.0","path":"io.gamemaker.gm_effect_windblown_particles-1.0.0.yyp",},
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"GrassLand_Background_1.png","CopyToMask":-1,"filePath":"datafiles/Multi_Platformer_Tileset_Free/GrassLand/Background","name":"GrassLand_Background_1.png","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -133,6 +137,7 @@
     {"id":{"name":"spr_player_andar_orig","path":"sprites/spr_player_andar_orig/spr_player_andar_orig.yy",},},
     {"id":{"name":"spr_player_andar","path":"sprites/spr_player_andar/spr_player_andar.yy",},},
     {"id":{"name":"spr_player_parada","path":"sprites/spr_player_parada/spr_player_parada.yy",},},
+    {"id":{"name":"spr_player_tiro","path":"sprites/spr_player_tiro/spr_player_tiro.yy",},},
     {"id":{"name":"tl_chao","path":"tilesets/tl_chao/tl_chao.yy",},},
   ],
   "resourceType":"GMProject",
