@@ -1,0 +1,25 @@
+{
+  "$GMParticleSystem":"",
+  "%Name":"ps_foguinho",
+  "backdropHeight":18,
+  "backdropImageOpacity":0.5,
+  "backdropImagePath":"C:\\Users\\wilso\\Downloads\\curso\\Materiais e créditos\\Materiais e créditos\\Assets\\Cenário\\Decoração\\Tocha.gif",
+  "backdropWidth":6,
+  "backdropXOffset":0.0,
+  "backdropYOffset":0.0,
+  "drawOrder":0,
+  "emitters":[
+    {"$GMPSEmitter":"","%Name":"foguinho","additiveBlend":true,"directionIncrease":0.0,"directionMax":51.0,"directionMin":109.0,"directionWiggle":20.0,"distribution":0,"editorColour":16777215,"editorDrawShape":true,"emitCount":-15,"emitDelayMax":0.0,"emitDelayMin":0.0,"emitDelayUnits":0,"emitIntervalMax":8.0,"emitIntervalMin":2.0,"emitIntervalUnits":1,"enabled":true,"endColour":2151948773,"GMPresetName":null,"gravityDirection":270.0,"gravityForce":0.0,"headPosition":0.0,"lifetimeMax":120.0,"lifetimeMin":60.0,"linkedEmitter":{"name":"foguinho","path":"particlelib/foguinho/foguinho.yy",},"locked":false,"midColour":4283007231,"mode":0,"name":"foguinho","orientationIncrease":0.0,"orientationMax":0.0,"orientationMin":0.0,"orientationRelative":false,"orientationWiggle":0.0,"regionH":9.571283,"regionW":6.0039444,"regionX":0.0,"regionY":-3.0,"resourceType":"GMPSEmitter","resourceVersion":"2.0","scaleX":0.05,"scaleY":0.05,"shape":0,"sizeIncrease":-0.005,"sizeMax":1.0,"sizeMin":1.0,"sizeWiggle":0.01,"spawnOnDeathCount":1,"spawnOnDeathGMPreset":null,"spawnOnDeathId":null,"spawnOnUpdateCount":1,"spawnOnUpdateGMPreset":null,"spawnOnUpdateId":null,"speedIncrease":0.01,"speedMax":0.1,"speedMin":0.1,"speedWiggle":0.1,"spriteAnimate":false,"spriteId":null,"spriteRandom":false,"spriteStretch":true,"startColour":4284206079,"texture":7,},
+  ],
+  "name":"ps_foguinho",
+  "parent":{
+    "name":"particulas",
+    "path":"folders/particulas.yy",
+  },
+  "resourceType":"GMParticleSystem",
+  "resourceVersion":"2.0",
+  "showBackdrop":true,
+  "showBackdropImage":true,
+  "xorigin":0,
+  "yorigin":0,
+}
