@@ -20,9 +20,15 @@ xscale = 1//0.72
 yscale = 1//0.72
 
 cntrl_vel = 0
+alphafx = 0
 
 var _layer = layer_tilemap_get_id("tl_chao");
 colisoes = [obj_parede, _layer];
+
+
+efeitos = ["fx_pb","fx_agua","fx_old","fx_blur","fx_wave"]
+efeito_atual = -1;
+
 
 pega_input = function(){
     
@@ -147,9 +153,9 @@ estado_atirar = function()
     aplica_vel()
     velh = 0
     
-    olha = sign(mouse_x-x)
+    if (mouse_x-x) != 0 olha = sign(mouse_x-x);
     
-    image_blend = c_blue
+    //image_blend = c_blue
     troca_sprite(spr_player_tiro)
     
     if !cntrl_vel{
@@ -170,6 +176,15 @@ estado_atirar = function()
     
     if image_index >= image_number - 1{
         cntrl_vel = 0}
+    
+    
+    if mouse_check_button_pressed(mb_left){
+        
+        var _tiro = instance_create_layer(x,y-20,layer,obj_tiro_player);
+        efeito_mola(1.2,0.8)
+        
+    }
+    
 }
 
 //estado_atirar = function()
@@ -237,5 +252,28 @@ troca_sprite = function(_spr){
         
     }
     
+}
+
+levar_dano = function(){
+    
+    global.shake = 15
+    efeito_mola(0.5,1.5)
+    alphafx = 2
+    
+}
+
+efeito_atual = -1;
+
+alternar_efeito = function()
+{
+    efeito_atual++;
+
+    if (efeito_atual >= array_length(efeitos))
+        efeito_atual = -1;
+
+    for (var i = 0; i < array_length(efeitos); i++)
+    {
+        layer_set_visible(layer_get_id(efeitos[i]), i == efeito_atual);
+    }
 }
 
