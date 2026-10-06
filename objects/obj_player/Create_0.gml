@@ -95,6 +95,7 @@ estado_parado = function()
     if jump{
         efeito_mola(0.8,1.5);
         estado = estado_pulo;
+        toca(snd_pulo)
     }
     
     if !chao{
@@ -119,6 +120,7 @@ estado_movendo = function()
     }
     
     if jump{
+        toca(snd_pulo)
         efeito_mola(0.8,1.2);
         estado = estado_pulo;
     }
@@ -126,6 +128,7 @@ estado_movendo = function()
     if !chao{
         //efeito_mola(0.8, 1.2);
         estado = estado_pulo;
+        toca(snd_pulo);
     }
     
 }
@@ -170,6 +173,7 @@ estado_atirar = function()
         cntrl_vel = 1
         image_index = 1
         image_speed = 1
+        toca(snd_tiro)
         
         show_debug_message("ababa")
     }
@@ -184,6 +188,13 @@ estado_atirar = function()
         efeito_mola(1.2,0.8)
         
     }
+    
+    if keyboard_check_pressed(vk_space) and chao{
+        
+        efeito_mola(0.8,1.4);
+        toca(snd_pulo)
+    }
+    
     
 }
 
@@ -259,6 +270,7 @@ levar_dano = function(){
     global.shake = 15
     efeito_mola(0.5,1.5)
     alphafx = 2
+    toca(snd_hit)
     
 }
 
