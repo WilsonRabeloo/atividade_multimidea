@@ -270,6 +270,7 @@ levar_dano = function(){
     global.shake = 15
     efeito_mola(0.5,1.5)
     alphafx = 2
+    toca(snd_hit)
     
 }
 

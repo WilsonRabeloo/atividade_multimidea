@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_player",
+  "%Name":"obj_inimigo",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_player",
+  "name":"obj_inimigo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,14 +30,11 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":true,
+  "solid":false,
   "spriteId":{
-    "name":"spr_player_andar_orig",
-    "path":"sprites/spr_player_andar_orig/spr_player_andar_orig.yy",
+    "name":"spr_mago_defalt",
+    "path":"sprites/spr_mago_defalt/spr_mago_defalt.yy",
   },
-  "spriteMaskId":{
-    "name":"spr_player_andar",
-    "path":"sprites/spr_player_andar/spr_player_andar.yy",
-  },
+  "spriteMaskId":null,
   "visible":true,
 }
