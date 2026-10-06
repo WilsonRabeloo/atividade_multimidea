@@ -26,3 +26,18 @@ atirar = function(){
     }
 }
 
+morrer = function(){
+    
+    //vivo = false
+    
+    if !vivo{
+        
+        image_alpha-=0.1
+        
+        if image_alpha<=0 instance_destroy();
+        
+    }
+    
+    
+}
+
