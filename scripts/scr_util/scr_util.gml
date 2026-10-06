@@ -4,3 +4,9 @@ function toca(_a){
     
     
 }
+
+function trocar(){
+    
+    room_goto(rm_demo_2)
+    
+}
