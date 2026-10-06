@@ -1,7 +1,7 @@
 {
   "$GMRoom":"v1",
   "%Name":"rm_demo_1",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rm_demo_1/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
@@ -12,6 +12,7 @@
     {"name":"inst_3DF43FDB","path":"rooms/rm_demo_1/rm_demo_1.yy",},
     {"name":"inst_7E62208D","path":"rooms/rm_demo_1/rm_demo_1.yy",},
     {"name":"inst_6EDD1E74","path":"rooms/rm_demo_1/rm_demo_1.yy",},
+    {"name":"inst_64C52B5E","path":"rooms/rm_demo_1/rm_demo_1.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -71,6 +72,7 @@
         {"$GMRInstance":"v4","%Name":"inst_6EDD1E74","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6EDD1E74","objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_placa","path":"objects/obj_placa/obj_placa.yy",},"propertyId":{"name":"texto","path":"objects/obj_placa/obj_placa.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"[shake]Demonstração:[/shake] [rainbow]Efeitos de camada[/rainbow]\"",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.7391304,"scaleY":1.9000001,"x":566.0,"y":381.0,},
+        {"$GMRInstance":"v4","%Name":"inst_64C52B5E","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_64C52B5E","objectId":{"name":"obj_troca","path":"objects/obj_troca/obj_troca.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.481535,"scaleY":1.578125,"x":1272.591,"y":422.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"tl_chao","depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"tl_chao","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":33,"SerialiseWidth":83,"TileCompressedData":[
           -17,0,1,12,-22,13,1,14,-21,0,1,12,-20,13,-17,0,1,12,-9,13,4,30,25,25,29,-9,13,1,14,-21,0,1,12,-20,13,
