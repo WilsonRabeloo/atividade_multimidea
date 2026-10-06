@@ -112,7 +112,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"atividade_multimidea",
   "resources":[
@@ -251,6 +251,7 @@
     {"id":{"name":"string_length_scribble","path":"scripts/string_length_scribble/string_length_scribble.yy",},},
     {"id":{"name":"string_width_scribble_ext","path":"scripts/string_width_scribble_ext/string_width_scribble_ext.yy",},},
     {"id":{"name":"string_width_scribble","path":"scripts/string_width_scribble/string_width_scribble.yy",},},
+    {"id":{"name":"seq_enemy_mov","path":"sequences/seq_enemy_mov/seq_enemy_mov.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_4dir","path":"shaders/__shd_scribble_bake_effect_4dir/__shd_scribble_bake_effect_4dir.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_8dir_2px","path":"shaders/__shd_scribble_bake_effect_8dir_2px/__shd_scribble_bake_effect_8dir_2px.yy",},},
     {"id":{"name":"__shd_scribble_bake_effect_8dir","path":"shaders/__shd_scribble_bake_effect_8dir/__shd_scribble_bake_effect_8dir.yy",},},
