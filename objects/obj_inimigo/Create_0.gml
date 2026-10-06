@@ -3,9 +3,10 @@ timer = game_get_speed(gamespeed_fps)*random_range(1,4)
 inicia_efeito_mola();
 
 
+
 atirar = function(){ 
     
-    if vivo
+    if vivo  
     {
     
           if timer<=0 {
