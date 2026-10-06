@@ -1,0 +1,1 @@
+texto = "[rainbow]Atenção![/rainbow] Você entrou na [wave]Segunda Fase[/wave]!";
