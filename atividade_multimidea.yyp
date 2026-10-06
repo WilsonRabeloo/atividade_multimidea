@@ -112,7 +112,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2026.0.0.16",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"atividade_multimidea",
   "resources":[
@@ -126,6 +126,7 @@
     {"id":{"name":"obj_treme","path":"objects/obj_treme/obj_treme.yy",},},
     {"id":{"name":"ps_exemplo","path":"particles/ps_exemplo/ps_exemplo.yy",},},
     {"id":{"name":"rm_demo_1","path":"rooms/rm_demo_1/rm_demo_1.yy",},},
+    {"id":{"name":"rm_demo_2","path":"rooms/rm_demo_2/rm_demo_2.yy",},},
     {"id":{"name":"rm_TESTES","path":"rooms/rm_TESTES/rm_TESTES.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
@@ -313,6 +314,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_demo_1","path":"rooms/rm_demo_1/rm_demo_1.yy",},},
+    {"roomId":{"name":"rm_demo_2","path":"rooms/rm_demo_2/rm_demo_2.yy",},},
     {"roomId":{"name":"rm_TESTES","path":"rooms/rm_TESTES/rm_TESTES.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
