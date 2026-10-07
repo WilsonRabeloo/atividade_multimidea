@@ -9,7 +9,7 @@ criar_caixa = function(){
     if _player {
         
         if !instance_exists(caixa){
-            caixa = instance_create_layer(x,y,"assets",obj_caixa_dialogo);
+            caixa = instance_create_layer(x,y,"Assets",obj_caixa_dialogo);
             caixa.image_alpha = 0.6
             caixa.image_xscale = .2
             caixa.texto = texto;

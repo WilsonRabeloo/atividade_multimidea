@@ -1,0 +1,1 @@
+ativou = false;
